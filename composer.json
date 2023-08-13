@@ -1,0 +1,18 @@
+{
+    "name": "shellphy/slim4-response",
+    "type": "library",
+    "require": {
+        "slim/slim": "^4.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shellphy\\Slim4Response\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "shellphy",
+            "email": "ai.shellphy@gmail.com"
+        }
+    ]
+}
