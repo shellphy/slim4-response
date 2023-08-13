@@ -4,16 +4,14 @@ namespace Shellphy\Slim4Response;
 
 use Throwable;
 use Slim\Factory\AppFactory;
-use Psr\Http\Message\ResponseInterface as Response;
-use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Log\LoggerInterface;
-use Slim\Middleware\ErrorMiddleware;
-use Shellphy\Slim4Response\ErrorHandler;
 use Shellphy\Slim4Response\JsonResponseMiddleware;
 
-class SlimConfigurator {
-    public static function configure(array $settings = []): \Slim\App {
+class SlimBootstrapper 
+{
+    public static function bootstrap(array $settings = []): \Slim\App 
+    {
         // 初始化Slim应用
         $app = AppFactory::create();
 

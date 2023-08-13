@@ -11,9 +11,9 @@ Usage：
 ```php
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
-use Shellphy\Slim4Response\SlimConfigurator;
+use Shellphy\Slim4Response\SlimBootstrapper;
 
-$app = SlimConfigurator::configure();
+$app = SlimBootstrapper::bootstrap();
 
 $app->get('/', function (Request $request, Response $response, $args) {
     $response->getBody()->write("hello, world");
